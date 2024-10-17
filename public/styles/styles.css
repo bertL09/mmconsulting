@@ -1,0 +1,102 @@
+:root {
+    --main-color: rgb(94, 157, 216);
+  }
+
+body{
+    margin: 0;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.report-table th, .report-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.report-table .row-even {
+    background-color: #f9f9f9;
+}
+
+.report-table .row-odd {
+    background-color: #ffffff;
+}
+
+.report-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.report-table th {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.report-table td {
+    text-align: center;
+}
+
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#filters input {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+#filters button {
+    padding: 8px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#filters button:hover {
+    background-color: var(--main-color);
+}
+
+.top-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.menu-button {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #555;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
